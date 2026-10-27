@@ -1,0 +1,67 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #4facfe, #00c6a7);
+  padding: 16px;
+}
+
+.card {
+  width: 100%;
+  max-width: 380px;
+  background: #fff;
+  border-radius: 18px;
+  padding: 28px 22px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+h1 { font-size: 1.5rem; margin-bottom: 18px; color: #1d3557; }
+
+.search { display: flex; gap: 8px; }
+
+.search input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #cfd8dc;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.search button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 10px;
+  background: #1d3557;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.search button:hover { background: #457b9d; }
+
+.message { min-height: 1.4em; margin-top: 12px; color: #c0392b; font-size: 0.95rem; }
+.message.info { color: #555; }
+
+.result { margin-top: 10px; }
+.hidden { display: none; }
+
+#cityName { color: #1d3557; }
+.temp { font-size: 3rem; font-weight: 700; color: #1d3557; }
+.desc { text-transform: capitalize; color: #555; margin-bottom: 16px; }
+
+.details { display: flex; justify-content: space-between; gap: 8px; }
+.details div {
+  flex: 1;
+  background: #f1f5f9;
+  border-radius: 10px;
+  padding: 10px 4px;
+}
+.details span { display: block; font-size: 0.75rem; color: #777; margin-bottom: 4px; }
+
+@media (max-width: 400px) {
+  .temp { font-size: 2.4rem; }
+}
